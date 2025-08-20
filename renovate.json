@@ -7,7 +7,7 @@
         "^\\.github/workflows/.*\\.ya?ml$"
       ],
       "matchStrings": [
-        "ANKI_VERSION: (?<currentValue>\\d+\\.\\d+)"
+        "ANKI_VERSION: (?<currentValue>\\d+\\.\\d+\\.\\d+)"
       ],
       "depNameTemplate": "anki",
       "datasourceTemplate": "pypi",
