@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": [
+        "^\\.github/workflows/.*\\.ya?ml$"
+      ],
+      "matchStrings": [
+        "ANKI_VERSION: (?<currentValue>\\d+\\.\\d+)"
+      ],
+      "depNameTemplate": "anki",
+      "datasourceTemplate": "pypi",
+      "extractVersionTemplate": "^(?<version>.*)$"
+    }
+  ],
+  "extends": [
+    ":automergeMinor"
+  ]
+}
