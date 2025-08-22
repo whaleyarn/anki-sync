@@ -2,12 +2,10 @@ name: Build and Push Docker Image
 
 on:
   push:
-    branches:
-      - main
 
 env:
   IMAGE_NAME: ghcr.io/${{ github.repository }}
-  ANKI_VERSION: 25.7.5
+  ANKI_VERSION: 25.2.4
 
 jobs:
   build-and-push:
