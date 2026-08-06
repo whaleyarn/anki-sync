@@ -5,7 +5,7 @@ on:
 
 env:
   IMAGE_NAME: ghcr.io/${{ github.repository }}
-  ANKI_VERSION: 25.9.5
+  ANKI_VERSION: 26.8.1
 
 jobs:
   build-and-push:
